@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Tables</title>
+  </head>
+  <body>
+    <table
+      border="2"
+      cellspacing="10"
+      cellpadding="20"
+      dir="rtl"
+    >
+      <tr>
+        <td>1</td>
+        <td>2</td>
+        <td colspan="2">3&4</td>
+        <td>5</td>
+      </tr>
+      <tr>
+        <td>1</td>
+        <td>2</td>
+        <td>3</td>
+        <td>4</td>
+        <td rowspan="2">5</td>
+      </tr>
+      <tr>
+        <td>1</td>
+        <td>2</td>
+        <td colspan="2">3&4</td>
+      </tr>
+      <tr>
+        <td>1</td>
+        <td colspan="3">2&3&4</td>
+        <td>5</td>
+      </tr>
+    </table>
+
+    <hr />
+
+    <table border="4">
+      <thead>
+        <tr>
+          <td>id</td>
+          <td>name</td>
+          <td>family</td>
+        </tr>
+        <tr>
+          <td>id4</td>
+          <td>name2</td>
+          <td>family2</td>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>2</td>
+          <td>3</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td colspan="3">all</td>
+        </tr>
+      </tfoot>
+    </table>
+  </body>
+</html>
