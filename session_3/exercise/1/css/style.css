@@ -1,0 +1,33 @@
+p {
+  background-color: cornflowerblue;
+  text-align: center;
+  font-size: xx-large;
+  font-weight: 700;
+}
+
+#header {
+  background-color: azure;
+}
+
+#menu-bar {
+  background-color: black;
+  color: white;
+}
+
+.warning {
+  background-color: coral;
+}
+
+#error {
+  background-color: green;
+}
+
+div#menu-bar > a {
+  text-decoration: none;
+  margin: 10px;
+}
+
+div#menu-bar > div#search > a {
+  background-color: black;
+  color: white;
+}
