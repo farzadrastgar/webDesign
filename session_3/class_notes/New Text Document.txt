@@ -1,0 +1,20 @@
+D0M
+html
+	head
+		meta
+		link
+	body
+		div#header
+		div#menu-bar
+			a
+			a
+			a
+		div#content
+		p.warning
+		p
+		p.warning
+		p.error
+		a.class-a
+		
+
+

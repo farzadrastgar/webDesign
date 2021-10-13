@@ -1,0 +1,48 @@
+body{
+    direction: rtl;
+}
+
+#header{
+    background-color: darkred;
+}
+#menu-bar{
+    background-color: darkgreen;
+}
+#content{
+    background-color: darkslateblue;
+}
+.error{
+    background-color: red;
+    color: white;
+}
+
+.warning{
+    background-color: orange;
+    color: blueviolet;
+}
+
+.class-a{
+   color: sienna;
+}
+
+a.class-a{
+    background-color: purple;
+}
+
+p.class-a{
+    background-color: seagreen;
+}
+.prg{
+    text-align: center;
+}
+
+span,p.prog,div#test{
+    background-color: gray;
+}
+
+div#menu-bar a{
+    color: white;
+}
+div#search > a{
+    color: yellow;
+}

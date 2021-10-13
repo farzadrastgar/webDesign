@@ -1,0 +1,38 @@
+body{
+    font-family: Tahoma;
+    /* direction: rtl; */
+}
+div{
+    font-size: 30px;
+}
+
+span{
+    /* font-family: 'Courier New', Courier, monospace;
+    font-size: 3em;
+    font-weight: 700;
+    font-style: italic;
+    font-variant: small-caps; */
+    font: bold 2em 'tahoma';
+
+    /* color: rgb(14, 46, 4); */
+
+    color: #0096ff;
+    text-align: justify;
+
+    vertical-align: bottom;
+    text-decoration: line-through;
+}
+
+p{
+    font-size: 400%;
+    color: #0096ff;
+    /* text-decoration: underline;
+    text-indent: 50px;
+    letter-spacing: 10px;
+    word-spacing: 20px;
+    text-transform: capitalize;
+    white-space: pre; */
+    /* text-shadow: 0px 0px 20px red; */
+
+    text-shadow: 5px 5px 0 red,10px 10px 0 green;
+}
