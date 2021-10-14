@@ -3,54 +3,59 @@
   <head>
     <meta charset="UTF-8" />
     <title>Web Design Course Assignment - Session 2</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
   </head>
   <body>
-    <table border="2px" width="100%">
+    <table id="main">
       <!-- Header -->
-      <tr>
+      <tr class="header">
         <td colspan="2"></td>
-        <td colspan="3" align="center">
+        <td colspan="3" class="main-title">
           <h1>My Web Design Project</h1>
         </td>
         <td colspan="2"></td>
       </tr>
       <!-- Menu -->
-      <tr>
-        <td width="13%"></td>
-        <td width="13%" align="center"><a href="../index.html">Home</a></td>
-        <td width="13%" align="center">
-          <a href="./branches.html">Branches</a>
-        </td>
-        <td width="13%" align="center">
+      <tr class="main-menu">
+        <td class="menu-item"></td>
+        <td class="menu-item"><a href="../index.html">Home</a></td>
+        <td class="menu-item"><a href="./branches.html">Branches</a></td>
+        <td class="menu-item">
           <a href="#">Employment</a>
         </td>
-        <td width="13%" align="center"><a href="#">About Us</a></td>
-        <td width="13%" align="center"><a href="#">Blog</a></td>
-        <td width="13%"></td>
+        <td class="menu-item line-through"><a href="#">About Us</a></td>
+        <td class="menu-item line-through"><a href="#">Blog</a></td>
+        <td class="menu-item"></td>
       </tr>
       <tr>
         <!-- Main Content -->
         <td colspan="5">
-          <form action="#" method="POST">
+          <form action="#" method="POST" enctype="multipart/form-data">
             <fieldset>
               <legend>Contact Us</legend>
+              <input type="hidden" name="id" value="299b21da-8167-43d4-9ed1-67f808f407e4">
               <div>
-                <label for="name">First Name:</label>
-                <input type="text" name="fname" placeholder="John" />
+                <label for="fname">First Name:</label>
+                <input type="text"  name="fname" id="fname" placeholder="John"  />
               </div>
               <br />
               <div>
-                <label for="name">Last Name:</label>
-                <input type="text" name="lname" placeholder="Doe" />
+                <label for="lname">Last Name:</label>
+                <input type="text" name="lname" id="lname" placeholder="Doe" />
               </div>
               <br />
               <div>
                 <label for="age">Age:</label>
-                <input type="number" name="age" />
+                <input type="number" name="age" id="age"/>
               </div>
               <br />
               <div>
-                <label for="name">Gender:</label>
+                  <label for="email">E-mail:</label>
+                  <input type="email" name="email" id="email">
+              </div>
+              <br>
+              <div>
+                <label for="gender">Gender:</label>
                 <input type="radio" name="gender" value="male" />
                 <label for="gender">Male</label>
                 <input type="radio" name="gender" value="female" />
@@ -72,10 +77,26 @@
               </div>
               <br />
               <div>
+                <label for="city">City</label>
+                <select name="city" id="city">
+                  <option value="berlin">Berlin</option>
+                  <option value="london">London</option>
+                  <option value="new-york">New York</option>
+                  <option value="quebec">Quebec</option>
+                </select>
+              </div>
+              <br/>
+              <div>
+                <label for="avatar">Avatar</label>
+                <input type="file" name="avatar" id="avatar">
+              </div>
+              <br>
+              <div>
                 <label for="message">Message:</label>
                 <br />
                 <textarea
                   name="message"
+                  id="message"
                   cols="30"
                   rows="10"
                   placeholder="This is my message ..."
@@ -95,9 +116,9 @@
       <tr>
         <td colspan="7"><a href="#">Back to top</a></td>
       </tr>
-      <tr>
+      <tr class="footer">
         <td colspan="2"></td>
-        <td colspan="3" align="center">
+        <td colspan="3" >
           Copyright &copy;
           <a href="farzadrastgar.ir" target="_blank">Farzad Rastgar Sani</a>
         </td>

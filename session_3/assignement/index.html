@@ -3,30 +3,29 @@
   <head>
     <meta charset="UTF-8" />
     <title>Web Design Course Assignment - Session 2</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
   </head>
   <body>
-    <table border="2px" width="100%">
+    <table id="main">
       <!-- Header -->
-      <tr>
+      <tr class="header">
         <td colspan="2"></td>
-        <td colspan="3" align="center">
+        <td colspan="3" class="main-title">
           <h1>My Web Design Project</h1>
         </td>
         <td colspan="2"></td>
       </tr>
       <!-- Menu -->
-      <tr>
-        <td width="13%"></td>
-        <td width="13%" align="center"><a href="#">Home</a></td>
-        <td width="13%" align="center">
-          <a href="./pages/branches.html">Branches</a>
+      <tr class="main-menu">
+        <td class="menu-item"></td>
+        <td class="menu-item"><a href="#">Home</a></td>
+        <td class="menu-item"><a href="pages/branches.html">Branches</a></td>
+        <td class="menu-item">
+          <a href="pages/employment.html">Employment</a>
         </td>
-        <td width="13%" align="center">
-          <a href="./pages/employment.html">Employment</a>
-        </td>
-        <td width="13%" align="center"><a href="#">About Us</a></td>
-        <td width="13%" align="center"><a href="#">Blog</a></td>
-        <td width="13%"></td>
+        <td class="menu-item line-through"><a href="#">About Us</a></td>
+        <td class="menu-item line-through"><a href="#">Blog</a></td>
+        <td class="menu-item"></td>
       </tr>
       <tr>
         <!-- Main Content -->
@@ -60,9 +59,9 @@
       <tr>
         <td colspan="7"><a href="#">Back to top</a></td>
       </tr>
-      <tr>
+      <tr class="footer">
         <td colspan="2"></td>
-        <td colspan="3" align="center">
+        <td colspan="3">
           Copyright &copy;
           <a href="farzadrastgar.ir" target="_blank">Farzad Rastgar Sani</a>
         </td>

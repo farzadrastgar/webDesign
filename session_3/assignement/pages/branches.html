@@ -3,28 +3,29 @@
   <head>
     <meta charset="UTF-8" />
     <title>Web Design Course Assignment - Session 2</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
   </head>
   <body>
-    <table border="2px" width="100%">
+    <table id="main">
       <!-- Header -->
-      <tr>
+      <tr class="header">
         <td colspan="2"></td>
-        <td colspan="3" align="center">
+        <td colspan="3" class="main-title">
           <h1>My Web Design Project</h1>
         </td>
         <td colspan="2"></td>
       </tr>
       <!-- Menu -->
-      <tr>
-        <td width="13%"></td>
-        <td width="13%" align="center"><a href="../index.html">Home</a></td>
-        <td width="13%" align="center"><a href="#">Branches</a></td>
-        <td width="13%" align="center">
+      <tr class="main-menu">
+        <td class="menu-item"></td>
+        <td class="menu-item"><a href="../index.html">Home</a></td>
+        <td class="menu-item"><a href="#">Branches</a></td>
+        <td class="menu-item">
           <a href="./employment.html">Employment</a>
         </td>
-        <td width="13%" align="center"><a href="#">About Us</a></td>
-        <td width="13%" align="center"><a href="#">Blog</a></td>
-        <td width="13%"></td>
+        <td class="menu-item line-through"><a href="#">About Us</a></td>
+        <td class="menu-item line-through"><a href="#">Blog</a></td>
+        <td class="menu-item"></td>
       </tr>
       <tr>
         <!-- Main Content -->
@@ -34,21 +35,23 @@
             <tr>
               <td colspan="7"><h3 id="berlin">Berlin</h3></td>
             </tr>
-            <tr>
+            <tr class="article">
               <td colspan="5">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Doloribus beatae commodi fuga eos quasi expedita dolore ducimus
-                quod, veniam eligendi, quaerat magnam explicabo qui est ipsum
-                eaque dolores nihil quam? Tempora dolorum eius, veniam
-                voluptatibus minus facere itaque error consequuntur reiciendis
-                repudiandae nostrum veritatis autem vel obcaecati officiis
-                placeat ratione delectus quos iste odio. Quae officiis nostrum
-                laudantium eveniet inventore voluptatem, laboriosam accusamus
-                recusandae molestias sint vero esse blanditiis beatae et
-                commodi? Velit rerum hic perferendis ullam ipsa nemo porro
-                quibusdam facere laboriosam dicta? Facere unde officiis ab
-                ipsam? Illo impedit sint excepturi, accusamus itaque alias odio
-                iure quod provident. <a href="#">Read more</a>
+                <p  >
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Doloribus beatae commodi fuga eos quasi expedita dolore ducimus
+                  quod, veniam eligendi, quaerat magnam explicabo qui est ipsum
+                  eaque dolores nihil quam? Tempora dolorum eius, veniam
+                  voluptatibus minus facere itaque error consequuntur reiciendis
+                  repudiandae nostrum veritatis autem vel obcaecati officiis
+                  placeat ratione delectus quos iste odio. Quae officiis nostrum
+                  laudantium eveniet inventore voluptatem, laboriosam accusamus
+                  recusandae molestias sint vero esse blanditiis beatae et
+                  commodi? Velit rerum hic perferendis ullam ipsa nemo porro
+                  quibusdam facere laboriosam dicta? Facere unde officiis ab
+                  ipsam? Illo impedit sint excepturi, accusamus itaque alias odio
+                  iure quod provident.<a href="#">Read more</a>
+                </p>
               </td>
               <td>
                 <img
@@ -63,21 +66,23 @@
             <tr>
               <td colspan="7"><h3 id="new-york">New York</h3></td>
             </tr>
-            <tr>
+            <tr class="article">
               <td colspan="5">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Doloribus beatae commodi fuga eos quasi expedita dolore ducimus
-                quod, veniam eligendi, quaerat magnam explicabo qui est ipsum
-                eaque dolores nihil quam? Tempora dolorum eius, veniam
-                voluptatibus minus facere itaque error consequuntur reiciendis
-                repudiandae nostrum veritatis autem vel obcaecati officiis
-                placeat ratione delectus quos iste odio. Quae officiis nostrum
-                laudantium eveniet inventore voluptatem, laboriosam accusamus
-                recusandae molestias sint vero esse blanditiis beatae et
-                commodi? Velit rerum hic perferendis ullam ipsa nemo porro
-                quibusdam facere laboriosam dicta? Facere unde officiis ab
-                ipsam? Illo impedit sint excepturi, accusamus itaque alias odio
-                iure quod provident.<a href="#">Read more</a>
+                <p  >
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Doloribus beatae commodi fuga eos quasi expedita dolore ducimus
+                  quod, veniam eligendi, quaerat magnam explicabo qui est ipsum
+                  eaque dolores nihil quam? Tempora dolorum eius, veniam
+                  voluptatibus minus facere itaque error consequuntur reiciendis
+                  repudiandae nostrum veritatis autem vel obcaecati officiis
+                  placeat ratione delectus quos iste odio. Quae officiis nostrum
+                  laudantium eveniet inventore voluptatem, laboriosam accusamus
+                  recusandae molestias sint vero esse blanditiis beatae et
+                  commodi? Velit rerum hic perferendis ullam ipsa nemo porro
+                  quibusdam facere laboriosam dicta? Facere unde officiis ab
+                  ipsam? Illo impedit sint excepturi, accusamus itaque alias odio
+                  iure quod provident.<a href="#">Read more</a>
+                </p>
               </td>
               <td>
                 <img
@@ -90,23 +95,25 @@
             </tr>
 
             <tr>
-              <td colspan="7"><h3 id="torento">Torento</h3></td>
+              <td colspan="7" class="article"><h3 id="torento">Torento</h3></td>
             </tr>
-            <tr>
-              <td colspan="5">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Doloribus beatae commodi fuga eos quasi expedita dolore ducimus
-                quod, veniam eligendi, quaerat magnam explicabo qui est ipsum
-                eaque dolores nihil quam? Tempora dolorum eius, veniam
-                voluptatibus minus facere itaque error consequuntur reiciendis
-                repudiandae nostrum veritatis autem vel obcaecati officiis
-                placeat ratione delectus quos iste odio. Quae officiis nostrum
-                laudantium eveniet inventore voluptatem, laboriosam accusamus
-                recusandae molestias sint vero esse blanditiis beatae et
-                commodi? Velit rerum hic perferendis ullam ipsa nemo porro
-                quibusdam facere laboriosam dicta? Facere unde officiis ab
-                ipsam? Illo impedit sint excepturi, accusamus itaque alias odio
-                iure quod provident.<a href="#">Read more</a>
+            <tr class="article">
+              <td colspan="5" >
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Doloribus beatae commodi fuga eos quasi expedita dolore ducimus
+                  quod, veniam eligendi, quaerat magnam explicabo qui est ipsum
+                  eaque dolores nihil quam? Tempora dolorum eius, veniam
+                  voluptatibus minus facere itaque error consequuntur reiciendis
+                  repudiandae nostrum veritatis autem vel obcaecati officiis
+                  placeat ratione delectus quos iste odio. Quae officiis nostrum
+                  laudantium eveniet inventore voluptatem, laboriosam accusamus
+                  recusandae molestias sint vero esse blanditiis beatae et
+                  commodi? Velit rerum hic perferendis ullam ipsa nemo porro
+                  quibusdam facere laboriosam dicta? Facere unde officiis ab
+                  ipsam? Illo impedit sint excepturi, accusamus itaque alias odio
+                  iure quod provident.<a href="#">Read more</a>
+                </p>
               </td>
               <td>
                 <img
@@ -120,21 +127,23 @@
             <tr>
               <td colspan="7"><h3 id="quebec">Quebec</h3></td>
             </tr>
-            <tr>
+            <tr class="article">
               <td colspan="5">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Doloribus beatae commodi fuga eos quasi expedita dolore ducimus
-                quod, veniam eligendi, quaerat magnam explicabo qui est ipsum
-                eaque dolores nihil quam? Tempora dolorum eius, veniam
-                voluptatibus minus facere itaque error consequuntur reiciendis
-                repudiandae nostrum veritatis autem vel obcaecati officiis
-                placeat ratione delectus quos iste odio. Quae officiis nostrum
-                laudantium eveniet inventore voluptatem, laboriosam accusamus
-                recusandae molestias sint vero esse blanditiis beatae et
-                commodi? Velit rerum hic perferendis ullam ipsa nemo porro
-                quibusdam facere laboriosam dicta? Facere unde officiis ab
-                ipsam? Illo impedit sint excepturi, accusamus itaque alias odio
-                iure quod provident.<a href="#">Read more</a>
+                <p  >
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Doloribus beatae commodi fuga eos quasi expedita dolore ducimus
+                  quod, veniam eligendi, quaerat magnam explicabo qui est ipsum
+                  eaque dolores nihil quam? Tempora dolorum eius, veniam
+                  voluptatibus minus facere itaque error consequuntur reiciendis
+                  repudiandae nostrum veritatis autem vel obcaecati officiis
+                  placeat ratione delectus quos iste odio. Quae officiis nostrum
+                  laudantium eveniet inventore voluptatem, laboriosam accusamus
+                  recusandae molestias sint vero esse blanditiis beatae et
+                  commodi? Velit rerum hic perferendis ullam ipsa nemo porro
+                  quibusdam facere laboriosam dicta? Facere unde officiis ab
+                  ipsam? Illo impedit sint excepturi, accusamus itaque alias odio
+                  iure quod provident.<a href="#">Read more</a>
+                </p>
               </td>
               <td>
                 <img
@@ -148,21 +157,23 @@
             <tr>
               <td colspan="7"><h3 id="london">London</h3></td>
             </tr>
-            <tr>
+            <tr class="article">
               <td colspan="5">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Doloribus beatae commodi fuga eos quasi expedita dolore ducimus
-                quod, veniam eligendi, quaerat magnam explicabo qui est ipsum
-                eaque dolores nihil quam? Tempora dolorum eius, veniam
-                voluptatibus minus facere itaque error consequuntur reiciendis
-                repudiandae nostrum veritatis autem vel obcaecati officiis
-                placeat ratione delectus quos iste odio. Quae officiis nostrum
-                laudantium eveniet inventore voluptatem, laboriosam accusamus
-                recusandae molestias sint vero esse blanditiis beatae et
-                commodi? Velit rerum hic perferendis ullam ipsa nemo porro
-                quibusdam facere laboriosam dicta? Facere unde officiis ab
-                ipsam? Illo impedit sint excepturi, accusamus itaque alias odio
-                iure quod provident.<a href="#">Read more</a>
+                <p  >
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Doloribus beatae commodi fuga eos quasi expedita dolore ducimus
+                  quod, veniam eligendi, quaerat magnam explicabo qui est ipsum
+                  eaque dolores nihil quam? Tempora dolorum eius, veniam
+                  voluptatibus minus facere itaque error consequuntur reiciendis
+                  repudiandae nostrum veritatis autem vel obcaecati officiis
+                  placeat ratione delectus quos iste odio. Quae officiis nostrum
+                  laudantium eveniet inventore voluptatem, laboriosam accusamus
+                  recusandae molestias sint vero esse blanditiis beatae et
+                  commodi? Velit rerum hic perferendis ullam ipsa nemo porro
+                  quibusdam facere laboriosam dicta? Facere unde officiis ab
+                  ipsam? Illo impedit sint excepturi, accusamus itaque alias odio
+                  iure quod provident.<a href="#">Read more</a>
+                </p>
               </td>
               <td>
                 <img
@@ -176,7 +187,7 @@
           </table>
         </td>
         <!-- Side Bar -->
-        <td colspan="2" valign="top">
+        <td colspan="2" class="side-bar">
           <h4>Jump to:</h4>
           <ul>
             <li><a href="#berlin">Berlin</a></li>
@@ -191,9 +202,9 @@
       <tr>
         <td colspan="7"><a href="#">Back to top</a></td>
       </tr>
-      <tr>
+      <tr class="footer">
         <td colspan="2"></td>
-        <td colspan="3" align="center">
+        <td colspan="3">
           Copyright &copy;
           <a href="farzadrastgar.ir" target="_blank">Farzad Rastgar Sani</a>
         </td>
