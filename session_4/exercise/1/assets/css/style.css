@@ -1,0 +1,39 @@
+/* body {
+  background-image: url(../images/website-background.gif);
+  background-size: 1000px 200px;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: left bottom;
+}
+
+
+p{
+    background-color: rgba(200, 0, 0, 0.5);
+} */
+
+.box {
+  background-color: rosybrown;
+  color: white;
+  margin: 50px 30px 10px;
+  padding: 20px;
+}
+
+.box.relative {
+  position: relative;
+  top: 20px;
+  left: 20px;
+  background-color: green;
+
+}
+
+.box.absolute {
+  position: absolute;
+  top: 100px;
+  right: 10px;
+}
+
+.box.fixed {
+  position: fixed;
+  right: 10px;
+  bottom: 20px;
+}
