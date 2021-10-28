@@ -1,0 +1,163 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+#header {
+  background-color: black;
+  color: wheat;
+  text-align: center;
+  padding: 10px;
+}
+
+/*main menu-bar*/
+
+#menu-bar {
+  background-color: black;
+  color: white;
+  text-align: center;
+  line-height: 30px;
+}
+
+#menu-bar > ul > li {
+  display: inline-block;
+}
+
+#menu-bar > ul > li > a {
+  display: inline-block;
+  padding: 0 10px;
+  color: white;
+}
+
+#menu-bar > ul > li > a:hover {
+  background-color: cadetblue;
+}
+
+/*sub-menu Level 1*/
+
+#menu-bar > ul > li > .sub-menu {
+  position: absolute;
+  border: 2px solid cadetblue;
+  min-width: 100px;
+  display: none;
+}
+
+#menu-bar > ul > li > .sub-menu a {
+  display: block;
+  color: white;
+  background-color: gray;
+}
+
+#menu-bar > ul > li > .sub-menu a:hover {
+  background-color: honeydew;
+}
+
+#menu-bar > ul > li:hover > .sub-menu {
+  display: block;
+}
+
+#menu-bar > ul > li:hover > a {
+  background-color: cadetblue;
+}
+
+/*sub-menu Level 2*/
+
+.sub-menu > ul > li > .sub-menu {
+}
+
+.sub-menu > ul > li:hover > .sub-menu {
+  display: block;
+  position: absolute;
+  border: 2px solid cadetblue;
+  top: 0;
+  left: 100px;
+}
+
+.sub-menu > ul > li:hover > .sub-menu > ul > li > a {
+  line-height: 30px;
+  min-width: 80px;
+}
+
+#menu-bar li > .sub-menu > ul > li:hover  > a {
+  background-color: cadetblue;
+}
+
+/* Boxes Page*/
+
+#wrapper {
+  width: 80%;
+  margin: 50px auto;
+  position: relative;
+}
+
+#description {
+  margin: 30px;
+  text-align: center;
+}
+
+.box {
+  height: 100px;
+  width: 100px;
+  margin: 0px auto;
+  position: relative;
+  cursor: pointer;
+}
+
+#box-1 {
+  background-color: blue;
+  left: 0px;
+  top: 50px;
+  z-index: 100;
+}
+
+#box-1:hover {
+  z-index: 10000;
+}
+
+#box-2 {
+  background-color: green;
+  left: -50px;
+  top: 0px;
+}
+
+#box-2:hover {
+  z-index: 10000;
+}
+
+#box-3 {
+  background-color: yellow;
+  left: 50px;
+  top: -100px;
+}
+
+#box-3:hover {
+  z-index: 10000;
+}
+
+#box-4 {
+  background-color: red;
+  left: 50px;
+  top: -300px;
+}
+
+#box-4:hover {
+  z-index: 10000;
+}
+
+#box-5 {
+  background-color: black;
+  left: -50px;
+  top: -400px;
+}
+
+#box-5:hover {
+  z-index: 10000;
+}
