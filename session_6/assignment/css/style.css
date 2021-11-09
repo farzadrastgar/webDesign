@@ -1,0 +1,313 @@
+@font-face {
+  font-family: iransans;
+  src: url("../font/eot/IRANSansWeb.eot");
+  src: url("../fonts/eot/IRANSansWeb.eot?#iefix") format("embedded-opentype"),
+    /* IE6-8 */ url("../font/woff2/IRANSansWeb.woff2") format("woff2"),
+    /* FF39+,Chrome36+, Opera24+*/ url("../font/fonts/woff/IRANSansWeb.woff")
+      format("woff"),
+    /* FF3.6+, IE9, Chrome6+, Saf5.1+*/ url("../font/fonts/ttf/IRANSansWeb.ttf")
+      format("truetype");
+}
+
+body {
+  font-family: IranSans;
+}
+
+.clear-fix {
+  clear: both;
+}
+
+#top-navigation {
+  background-color: #363a88;
+  line-height: 70px;
+}
+
+#top-navigation #date-time-text {
+  color: white;
+}
+
+#top-navigation ul {
+  float: left;
+}
+
+#top-navigation ul li {
+  display: inline-block;
+}
+
+#top-navigation ul li a {
+  display: inline-block;
+  color: white;
+  padding: 0 10px;
+}
+#top-navigation ul li a:hover {
+  color: #b5b8f0;
+}
+
+header {
+  background-color: black;
+  height: 90px !important;
+}
+
+#logo h1 {
+  font-size: 0px;
+}
+
+#logo {
+  height: 70px;
+  margin-top: 10px;
+  background-image: url(../images/logo.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  cursor: pointer;
+}
+
+#top-ad {
+  background-color: white;
+  color: black;
+  line-height: 70px;
+  margin-top: 10px;
+  text-align: center;
+}
+
+#search-bar {
+  position: relative;
+}
+
+#search-bar input[type="text"] {
+  margin-top: 25px;
+  height: 25px;
+  outline: none;
+  float: right;
+  width: 100%;
+}
+
+#search-bar button {
+  margin-top: 25px;
+  outline: none;
+  float: left;
+  height: 31px;
+  cursor: pointer;
+  position: absolute;
+  left: -10px;
+}
+
+#menu {
+  border-bottom: 4px solid #363a88;
+}
+
+#menu ul li {
+  display: inline-block;
+}
+
+#menu ul li a {
+  display: inline-block;
+  color: black;
+  line-height: 50px;
+  padding: 0 10px;
+}
+
+#menu ul li a:hover {
+  background-color: #363a88;
+  color: white;
+}
+
+#menu #social-networks {
+  margin-top: 15px;
+  float: left;
+}
+
+#menu #social-networks ul li a {
+  padding: 0;
+}
+
+#menu #social-networks .telegram {
+  background-image: url(../images/telegram.png);
+}
+
+#menu #social-networks .instagram {
+  background-image: url(../images/insta.png);
+}
+
+#menu #social-networks .twitter {
+  background-image: url(../images/twitter.png);
+}
+
+#menu #social-networks .facebook {
+  background-image: url(../images/facebook.png);
+}
+
+#menu #social-networks .google {
+  background-image: url(../images/G+.jpg);
+}
+
+#menu #social-networks a {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: fixed;
+  height: 25px;
+  width: 25px;
+  margin-right: 10px;
+}
+
+#main-content {
+  margin: 15px 0;
+}
+
+#main-content .box {
+  border: 1px solid black;
+}
+
+#main-content .box .box-header {
+  background-color: #363a88;
+  color: white;
+  padding: 15px;
+  margin-bottom: 10px;
+}
+
+#main-content .box-body {
+  position: relative;
+  display: block;
+  margin: 0 10px 10px 10px;
+  border: 1px solid black;
+}
+
+#main-content .box-body img {
+  width: 100%;
+  height: auto;
+}
+
+#main-content .box-body a span {
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  left: 0px;
+  background-color: gray;
+  color: white;
+  display: block;
+  padding: 10px;
+  /* border-bottom: 1px solid #000; */
+}
+
+#main-content .box-body a:hover span {
+  background-color: black;
+}
+
+#main-content article.news {
+  margin: 20px 10px;
+}
+
+#main-content a:hover > article.news > .news-text >h3 {
+ color:red
+}
+
+#main-content article.news img {
+  float: right;
+  width: 29%;
+  border: 1px solid gainsboro;
+}
+
+#main-content article.news .news-text {
+  width: 70%;
+  float: left;
+  color: black;
+}
+
+#main-content article.news .news-text h3 {
+  font-weight: 800;
+  margin: 0 10px;
+}
+
+#main-content article.news .news-text p {
+  margin: 10px;
+  text-align: justify;
+  line-height: 20px;
+}
+
+#main-content button.archive {
+  font-family: iransans;
+  background-color: #363a88;
+  color: white;
+  outline: none;
+  padding: 10px;
+  width: 100%;
+  border: none;
+  cursor: pointer;
+}
+
+#main-content #side-ad{
+  border: 1px solid black;
+  background-color: white;
+  color: black;
+  line-height: 70px;
+  margin: 10px 0;
+  text-align: center;
+}
+
+footer {
+  background-color: black;
+  text-align: center;
+}
+
+footer ul li {
+  display: inline-block;
+  margin-top: 20px;
+}
+
+footer ul li a {
+  display: inline-block;
+  padding: 15px;
+  color: white;
+}
+
+footer ul li:hover a{
+  color: gainsboro;
+}
+
+footer #social-networks {
+  margin: 15px;
+}
+
+footer #social-networks ul li a {
+  padding: 0;
+}
+
+footer #social-networks .telegram {
+  background-image: url(../images/telegram.png);
+}
+
+footer #social-networks .instagram {
+  background-image: url(../images/insta.png);
+}
+
+footer #social-networks .twitter {
+  background-image: url(../images/twitter.png);
+}
+
+footer #social-networks .facebook {
+  background-image: url(../images/facebook.png);
+}
+
+footer #social-networks .google {
+  background-image: url(../images/G+.jpg);
+}
+
+footer #social-networks a {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: fixed;
+  height: 25px;
+  width: 25px;
+  margin-right: 10px;
+  border-radius: 35px;
+}
+
+#copyright {
+  background-color: #363a88;
+  text-align: center;
+  padding: 10px;
+  color: white;
+}
+
+#copyright a {
+  color: white;
+}
