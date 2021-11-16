@@ -1,0 +1,46 @@
+.container {
+  margin: 400px;
+}
+
+.cube {
+  perspective: 2000px;
+  perspective-origin: 30% 30%;
+  transform: rotateY(30deg) rotateX(30deg) rotateZ(30deg);
+  transform-style: preserve-3d;
+}
+
+.box {
+  height: 200px;
+  width: 200px;
+  position: absolute;
+}
+
+.front {
+  background-color: rgba(50, 220, 16, 0.4);
+  transform: translateZ(100px);
+}
+
+.back {
+  background-color: rgba(207, 77, 207, 0.4);
+  transform: translateZ(-100px);
+}
+
+.top {
+  background-color: rgba(197, 19, 28, 0.4);
+  transform: rotateX(90deg) translateZ(100px);
+}
+
+.bottom {
+  background-color: rgba(218, 218, 29, 0.4);
+  transform: rotateX(90deg) translateZ(-100px);
+}
+
+.left {
+  background-color: rgba(14, 80, 223, 0.4);
+  transform: rotateY(90deg) translateZ(100px);
+}
+
+.right {
+  background-color: rgba(0, 128, 0, 0.4);
+  transform: rotateY(90deg) translateZ(-100px);
+}
