@@ -2,11 +2,23 @@
   margin: 400px;
 }
 
+@keyframes cube {
+  0%   {transform: scaleY(2);}
+  25%  {transform: scaleY(1);}
+  50%  {transform: scaleX(2);}
+  100% {transform: scaleX(1) translateY(100px)}
+}
+
 .cube {
   perspective: 2000px;
   perspective-origin: 30% 30%;
   transform: rotateY(30deg) rotateX(30deg) rotateZ(30deg);
   transform-style: preserve-3d;
+  transition: all 4s cubic-bezier(.5,.65,.02,1);
+}
+
+.cube:hover{
+  transform: rotateX(60deg) rotateY(60deg) scaleX(1.5) scaleY(2);
 }
 
 .box {
@@ -18,11 +30,17 @@
 .front {
   background-color: rgba(50, 220, 16, 0.4);
   transform: translateZ(100px);
+  transition: all 2s linear 1s;
+}
+
+.front:hover{
+  transform: scaleX(2) scaleY(2);
 }
 
 .back {
   background-color: rgba(207, 77, 207, 0.4);
   transform: translateZ(-100px);
+  animation: cube 4s linear ;
 }
 
 .top {

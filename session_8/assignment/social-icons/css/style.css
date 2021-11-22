@@ -1,0 +1,37 @@
+.social-networks ul {
+  list-style: none;
+}
+
+.social-networks ul li {
+  display: inline-block;
+}
+
+.social-networks ul li a {
+  width: 50px;
+  height: 50px;
+  display: inline-block;
+  background-image: url(../images/logo-collection.jpg);
+  background-repeat: no-repeat;
+  background-size: 200px 120px;
+  transition: background-position 0.5s cubic-bezier(0.42, 0, 0.56, 1);
+}
+
+.social-networks ul li a.facebook {
+  background-position-x: -5px;
+}
+
+.social-networks ul li a.whatsapp {
+  background-position-x: -53px;
+}
+
+.social-networks ul li a.instagram {
+  background-position-x: -100px;
+}
+
+.social-networks ul li a.twitter {
+  background-position-x: -147px;
+}
+
+.social-networks ul li a:hover {
+  background-position-y: -60px;
+}
