@@ -1,0 +1,128 @@
+header {
+  background-color: blue;
+  color: white;
+}
+
+header h1 {
+  line-height: 60px;
+  margin-left: 20px;
+}
+
+main {
+  background-color: beige;
+  /* padding: 20px; */
+  width: 70%;
+  float: left;
+}
+
+main .col1 {
+  width: 50%;
+  float: left;
+}
+
+main .col2 {
+  width: 50%;
+  float: right;
+}
+
+aside {
+  background-color: green;
+  float: left;
+  width: 30%;
+}
+
+aside .toolbar {
+  line-height: 170px;
+  margin-bottom: 10px;
+  background-color: tomato;
+  text-align: center;
+}
+
+article {
+  padding: 40px;
+  text-align: justify;
+}
+
+#description {
+  padding: 20px;
+  text-align: justify;
+}
+
+.display {
+    display: flex;
+    flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: flex-start;
+	align-items: stretch;
+	align-content: stretch;
+}
+
+.display span{
+    padding: 20px;
+    width: 20%;
+    text-align: center;
+}
+
+.display span:hover{
+    background-color: gray;
+    color: white;
+}
+
+footer {
+  background-color: red;
+  clear: both;
+  line-height: 70px;
+  text-align: center;
+}
+
+/* X-Large devices (large desktops, 1200px and up) */
+@media screen and (min-width: 1200px) {
+  .display span:nth-child(1){
+      background-color: yellow;
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media screen and (min-width: 992px) and (max-width:1200px) {
+    .display span:nth-child(2){
+        background-color: yellow;
+    }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media screen and (min-width: 768px) and (max-width:991px){
+    .display span:nth-child(3){
+        background-color: yellow;
+    }
+    aside,main{
+        width: 100%;
+    }
+    
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media screen and (min-width: 576px) and (max-width:767px) {
+    .display span:nth-child(4){
+        background-color: yellow;
+    }
+   
+    main,aside,main .col1,main .col2{
+        width: 100%;
+    }
+}
+
+/* Small devices (portrait phones, 320px and up) */
+@media screen and (max-width:575px) {
+    .display span:nth-child(5){
+        background-color: yellow;
+    }
+
+    main,main .col1,main .col2{
+        width: 100%;
+    }
+
+    aside{
+        display: none;
+    }
+}
+
