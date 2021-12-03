@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* div{
+            column-count: 2;
+            column-gap: 20px;
+            column-rule: 3px solid blue ;
+            text-align: justify;
+        } */
+
+      .flip-card {
+        margin: 100px;
+        perspective: 1000px;
+
+
+      }
+
+      .flip-card .card {
+        position: relative;
+        transform-style: preserve-3d;
+
+        width: 100px;
+        height:100px
+
+      }
+
+      .flip-card:hover .card {
+        transform: rotateY(180deg);
+        transition-duration: 3s;
+      }
+
+      .flip-card .card div {
+        width: 100px;
+        height: 100px;
+        position: absolute;
+      }
+
+      .front {
+        background-color: red;
+        transform: rotateY(180deg);
+      }
+
+      .back {
+        background-color: blue;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="flip-card">
+      <div class="card">
+        <div class="back">back</div>
+        <div class="front">front</div>
+      </div>
+    </div>
+    <!-- <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam dolor accusamus excepturi. Odit autem reiciendis magnam similique? Nisi maiores dicta voluptate at laudantium commodi tempora eveniet, delectus, ipsam eaque aspernatur enim numquam nostrum facilis eos natus ut totam voluptatum. Eius nobis exercitationem asperiores quis explicabo dignissimos aliquid illo quod inventore, quaerat rerum eum veritatis minus corporis impedit illum laboriosam dolorem dolor ut libero! Nostrum minus odio corrupti, et, voluptatibus consequatur qui sunt officiis molestias laboriosam non ipsum. Officiis numquam eius molestias, minima explicabo sunt quos cum earum consequatur magni perferendis, voluptatum pariatur labore, omnis laboriosam quis eaque cupiditate exercitationem iure quo ex nihil culpa! Accusantium perferendis hic blanditiis modi cumque quae assumenda impedit vero voluptates ducimus? Ipsa asperiores corrupti voluptatem nemo accusantium odio voluptatibus. Ipsa, commodi similique consequuntur enim officiis, optio autem voluptatem, sint nisi eos harum aspernatur ea voluptatum.</div> -->
+  </body>
+</html>
