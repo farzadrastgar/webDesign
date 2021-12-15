@@ -8,13 +8,15 @@
 }
 
 @font-face {
-  font-family: "Material Icons";
+  font-family: "FontAwesome";
+  src: url("../fonts/fontawesome-webfont.eot?v=4.7.0");
+  src: url("../fonts/fontawesome-webfont.eot?#iefix&v=4.7.0")
+      format("embedded-opentype"),
+    url("../fonts/fontawesome-webfont.woff2?v=4.7.0") format("woff2"),
+    url("../fonts/fontawesome-webfont.woff?v=4.7.0") format("woff"),
+    url("../fonts/fontawesome-webfont.ttf?v=4.7.0") format("truetype");
+  font-weight: normal;
   font-style: normal;
-  font-weight: 400;
-  src: local("Material Icons"), local("MaterialIcons-Regular"),
-    url(../fonts/materialdesignicons-webfont.e9db400.woff2) format("woff2"),
-    url(https://example.com/MaterialIcons-Regular.woff) format("woff"),
-    url(https://example.com/MaterialIcons-Regular.ttf) format("truetype");
 }
 
 body {
@@ -24,15 +26,52 @@ body {
 
 /* header */
 
+header {
+  position: fixed;
+  left: 0;
+  right: 0;
+}
+header #top-logo{
+  text-align: center;
+}
+
 header #top-logo img {
-  margin-top: 10px;
+
+  margin: 20px;
+  width: 60px;
 }
 
 header #main-menu ul > li {
   display: inline-block;
 }
 
-header #main-menu ul > li > a {
+header #main-menu > ul > li > a {
+  display: inline-block;
+  line-height: 60px;
+  padding: 0 15px;
+  font-size: 14px;
+}
+
+header #main-menu > ul > li > i {
+  font-family: "FontAwesome";
+  font-size: 10px;
+  color: #228ced;
+}
+
+.fa {
+  display: inline-block;
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.fa-chevron-down:before {
+  content: "\f078";
+}
+
+header .sub-menu > li > a {
   display: inline-block;
   line-height: 30px;
   padding: 10px;
@@ -46,6 +85,7 @@ header #main-menu ul > li > a:hover {
 header #main-menu ul .sub-menu {
   display: none;
   position: absolute;
+  background-color: #fff;
   border: 1px solid rgba(53, 155, 244, 0.32157);
 }
 
@@ -63,9 +103,11 @@ header #main-menu .sub-menu > li > a {
 }
 
 header #login a {
-  line-height: 45px;
+  line-height: 60px;
   font-size: 14px;
   float: left;
+  padding: 0 10px;
+  margin-left: 20px;
 }
 
 .un {
@@ -83,6 +125,35 @@ header #login a {
   background-size: 100% 4px;
 }
 
+/* section-one */
+
+section#section-one {
+  padding-top: 150px;
+  text-align: center;
+  line-height: 40px;
+  background-image: url(../images/top-background.svg),
+    linear-gradient(179deg, #e7e8f3 2%, #fff 242%);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+#section-one h1,
+#section-one h2 {
+  font-size: 35px;
+  color: #062870;
+  font-weight: 800;
+}
+
+#section-one span {
+  color: #228ced;
+}
+
+#section-one h3 {
+  color: #767888;
+  font-size: 16px;
+  margin: 20px;
+}
+
 /* footer */
 
 footer a {
@@ -92,8 +163,8 @@ footer a {
 
 footer #contact img {
   width: 150px;
-  display:block;
-  margin:auto;
+  display: block;
+  margin: auto;
 }
 
 footer #contact {
@@ -162,4 +233,11 @@ footer .copyright a {
   color: #228ced;
   font-size: 15px;
   font-weight: 800;
+}
+
+footer > img {
+  margin-bottom: -400px;
+  width: 100%;
+  z-index: -100;
+  position: relative;
 }
