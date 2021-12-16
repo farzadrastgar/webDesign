@@ -31,12 +31,11 @@ header {
   left: 0;
   right: 0;
 }
-header #top-logo{
+header #top-logo {
   text-align: center;
 }
 
 header #top-logo img {
-
   margin: 20px;
   width: 60px;
 }
@@ -241,3 +240,74 @@ footer > img {
   z-index: -100;
   position: relative;
 }
+
+section#about-us,
+section#contact-us {
+  padding-top: 150px;
+  text-align: right;
+  line-height: 40px;
+  background-image: url(../images/top-background.svg),
+    url(../images/about-us-bg.svg);
+  background-position: top, bottom right;
+  background-repeat: no-repeat;
+  background-size: contain;
+  color: #062870;
+}
+
+section#about-us h1,
+section#contact-us h1 {
+  font-size: 25px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+section#about-us p {
+  text-align: justify;
+  margin: 15px;
+}
+
+section#contact-us p {
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+section#contact-us label {
+  display: block;
+  font-size: 15px;
+}
+
+section#contact-us input {
+  font-family: yekan;
+  padding: 10px;
+  width: 90%;
+  border: 1px solid #e7e8f3;
+  background-color: #fbfbfe;
+  border-radius: 10px;
+  margin-bottom: 1.24rem;
+}
+
+section#contact-us textarea {
+  font-family: yekan;
+  padding: 10px;
+  width: 95%;
+  border: 1px solid #e7e8f3;
+  background-color: #fbfbfe;
+  border-radius: 10px;
+}
+
+section#contact-us *:focus {
+  border: 1px solid #228ced;
+  outline: 0px;
+}
+
+section#contact-us button{
+  width: 95%;
+  font-family: yekan;
+  color:#fff;
+  background-color:#228ced;
+  padding: 15px;
+  outline: 0px;
+  border:0px;
+  border-radius: 10px;
+}
+
