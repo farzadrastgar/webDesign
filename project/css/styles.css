@@ -300,14 +300,61 @@ section#contact-us *:focus {
   outline: 0px;
 }
 
-section#contact-us button{
+section#contact-us button {
   width: 95%;
   font-family: yekan;
-  color:#fff;
-  background-color:#228ced;
+  color: #fff;
+  background-color: #228ced;
   padding: 15px;
   outline: 0px;
-  border:0px;
+  border: 0px;
   border-radius: 10px;
 }
 
+section#section-two {
+  background-color: #f1f1f8;
+  position: relative;
+  width: 100%;
+  min-height: 500px;
+}
+
+#section-two .home-box {
+  width: 35%;
+  background-color: #fff;
+  margin: 30px;
+  border-radius: 15px;
+  padding: 25px;
+}
+
+#section-two h4 {
+  font-size: 16px;
+  color: #062870;
+  padding: 15px 5px 30px 0;
+}
+
+#section-two p {
+  font-size: 14px;
+  line-height: 35px;
+}
+
+#section-two a {
+  color:#228ced;
+  font-size: 18px;
+  margin: 145px 0;
+}
+
+#section-two .home-box#box-1 {
+  position: absolute;
+  top: 50px;
+  left: 0;
+}
+
+#section-two .home-box#box-2 {
+  position: absolute;
+  top: 300px;
+  left: 0;
+}
+
+#section-two .home-box#box-3 {
+  top: 50px;
+}
