@@ -416,6 +416,7 @@ section#section-two {
   box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
   margin: 20px;
   height: 200px;
+  background-color: #fff;
 }
 
 #blog .news > .news-cart > .image {
@@ -482,4 +483,132 @@ h3 {
   border-radius: 3px;
   line-height: 10px;
   padding: 3px 5px;
+}
+
+/* login */
+
+#login {
+  padding: 2em;
+  background-image: url(../images/login1.svg), url(../images/login2.svg);
+  background-repeat: no-repeat, no-repeat;
+  background-size: 150vh, 50vh;
+  background-position: -300px -150px, center right;
+  padding: 20px;
+}
+
+#login #right-pane {
+  min-height: 100vh;
+}
+
+#login #right-pane .row {
+  width: 60%;
+  margin: 0 auto;
+}
+
+#login h2,
+h4 {
+  margin: 40px;
+  text-align: center;
+  font-size: 25px;
+  color: #062870;
+}
+
+#login h2 span,
+#login h4 span {
+  color: #228ced;
+}
+
+#login img.top-logo {
+  width: 70px;
+}
+
+section#login label {
+  display: block;
+  color: #062870;
+  padding: 10px 0;
+  font-size: 15px;
+}
+
+section#login input {
+  font-family: yekan;
+  padding: 15px;
+  width: 90%;
+  border: 1px solid #e7e8f3;
+  background-color: #fbfbfe;
+  border-radius: 10px;
+  margin-bottom: 1.24rem;
+}
+
+section#login *:focus {
+  border: 1px solid #228ced;
+  outline: 0px;
+}
+
+section#login button {
+  width: 100%;
+  font-family: yekan;
+  font-size: 16px;
+  color: #fff;
+  background-color: #228ced;
+  padding: 13px;
+  outline: 0px;
+  border: 0px;
+  border-radius: 10px;
+}
+
+section#login #after-login-links {
+  text-align: center;
+  line-height: 40px;
+  margin: 10px;
+  font-size: 12px;
+  color: #767888;
+}
+
+section#login #after-login-links a {
+  color: #0cd4eb;
+}
+
+#login #captcha {
+  position: relative;
+}
+
+#login #captcha input {
+  width: 55%;
+  float: right;
+}
+
+#login #captcha img {
+  width: 25%;
+  background-color: #fbfbfe;
+  border: 1px solid #e7e8f3;
+  border-radius: 10px;
+  padding: 13px;
+  margin-left: 5px;
+  float: left;
+}
+
+#login .box {
+  margin: 12vh auto 0 auto;
+  text-align: center;
+  width: 23em;
+  height: 60%;
+  background-color: #fff;
+  border-radius: 15px;
+  padding: 30px 20px;
+  line-height: 32px;
+  font-size: 18px;
+}
+
+#login h4,p {
+  margin: 30px;
+  color: #062870;
+}
+
+#login #left-pane img{
+  margin: 40px;
+}
+
+#login .box button {
+  width: 40%;
+  cursor: pointer;
 }

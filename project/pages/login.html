@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/normalize.css" />
+    <link rel="stylesheet" href="../css/grid.css" />
+    <link rel="stylesheet" href="../css/styles.css" />
+    <link rel="icon" type="image/x-icon" href="../images/favicon.ico" />
+    <title>Document</title>
+  </head>
+  <body>
+    <section id="login">
+      <div class="row">
+        <div class="col-6" id="right-pane">
+          <div class="row">
+            <div class="col-12">
+              <img src="../images/main-logo.svg" alt="logo" class="top-logo" />
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-12" id="form-div">
+              <h2>
+                ورود به ابر
+                <span> شهاب </span>
+              </h2>
+              <form action="">
+                <label for="mobile">شماره همراه </label>
+                <input
+                  type="text"
+                  name="mobile"
+                  placeholder="09xxxxxxxxx"
+                  tabindex="1"
+                />
+                <label for="password">رمز عبور خود را وارد کنید </label>
+                <input
+                  type="text"
+                  name="password"
+                  placeholder="******"
+                  tabindex="2"
+                />
+                <div id="captcha">
+                  <label for="captcha">کد امنیتی را وارد کنید </label>
+                  <input
+                    type="text"
+                    name="captcha"
+                    placeholder="کد امنیتی"
+                    tabindex="3"
+                  />
+                  <img src="../images/captcha.svg" alt="captcha" />
+                </div>
+
+                <button type="submit" tabindex="4">ورود</button>
+              </form>
+              <div id="after-login-links">
+                <a href="#">بازیابی رمز عبور</a>
+                <p>
+                  هنوز ثبت نام نکرده اید؟ از اینجا
+                  <a href="#">ثبت نام</a>
+                  کنید
+                </p>
+                <p>نسخه ۲.۰.۰</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-6" id="left-pane">
+          <div class="box">
+            <img src="../images/login-icon.svg" alt="" />
+            <h4>
+              حس خوب
+              <span> امنیت </span>
+            </h4>
+            <p>
+              بازارچه سهاب، پلتفرمی ایمن و سریع است که سرویس‌های ابری هوش مصنوعی
+              را در قالب رابط برنامه‌نویسی نرم‌افزار جهت هوشمندسازی فرآیندها و
+              به منظور ساخت نرم‌افزارها و سخت‌افزارها در اختیار مدیران
+              کسب‌وکارها قرار می دهد.
+            </p>
+            <button>بیشتر بخوانید</button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
